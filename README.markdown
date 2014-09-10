@@ -1,14 +1,9 @@
-# Playtomic C# API
+# 1Game SDK for .NET, Mono/MonoGame, and Xamarin
 
-This file is the official Playtomic API for C# games 
-compatible with Xamarin Studio, Visual Studio, Mono 
-and Microsoft .NET.
+Solution built in Visual Studio 2012, but
+should compile in Visual Studio 2010 or newer.
 
-Playtomic is a collection of open source tools for games
-like leaderboards, user created content and dynamic content.
+# Version History
 
-  - http://playtomic.org/
-
-Documentation is available at:
-
-  - http://playtomic.org/api/csharp.html
+This SDK is extended out of the original Playtomic 
+API and works with the most current version of 1Game.
