@@ -18,6 +18,8 @@ namespace OneGameTest
 				{
 					PTestGameVars.All,
 					PTestGameVars.Single,
+					PTestGameVars.Save,
+					PTestGameVars.Update,
 					PTestGeoIP.Lookup,
 					PTestNewsletter.Subscribe,
 					PTestLeaderboards.FirstScore,
