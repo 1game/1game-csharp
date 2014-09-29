@@ -17,7 +17,11 @@ namespace OneGame
 		public static void Load(Action<Hashtable, PResponse> callback)
 		{
 			PRequest.GetResponse (SECTION, LOAD, null, response => {
-				var data = response.success ? response.json : null;
+                var data = response.success
+                    ? response.json["variables"] is System.Collections.Hashtable
+                        ? (System.Collections.Hashtable)response.json["variables"]
+                        : null
+                    : null;
 				callback(data, response);
 			});
 		}
@@ -35,7 +39,11 @@ namespace OneGame
 			};
 
 			PRequest.GetResponse (SECTION, LOADSINGLE, postdata, response => {
-				var data = response.success ? response.json : null;
+                var data = response.success
+                    ? response.json["variables"] is System.Collections.Hashtable
+                        ? (System.Collections.Hashtable)response.json["variables"]
+                        : null
+                    : null;
 				callback(data, response);
 			});
 		}
